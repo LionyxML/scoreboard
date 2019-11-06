@@ -2,9 +2,9 @@
 window.onload = init;
 
 function init() {
-    document.getElementById("thetext").onclick = function () { toggleEditor("thetext", "ta1", "editor");}
-    document.getElementById("thetextHome").onclick = function () { toggleEditor("thetextHome", "ta2", "editorHome");}
-    document.getElementById("thetextVisitor").onclick = function () { toggleEditor("thetextVisitor", "ta3", "editorVisitor");}
+    //document.getElementById("thetext").onclick = function () { toggleEditor("thetext", "ta1", "editor");}
+    //document.getElementById("thetextHome").onclick = function () { toggleEditor("thetextHome", "ta2", "editorHome");}
+    //document.getElementById("thetextVisitor").onclick = function () { toggleEditor("thetextVisitor", "ta3", "editorVisitor");}
 
 
     document.getElementById("submit").onclick = function () { doEdit("thetext", "ta1", "editor");}
