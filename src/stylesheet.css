@@ -48,3 +48,12 @@ div#editorVisitor {
 .number {
   font-size: 800%;
 }
+
+.n-resize{ 
+  cursor: n-resize;
+}
+
+.s-resize{
+  cursor: s-resize;
+}
+
