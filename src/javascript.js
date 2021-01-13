@@ -2,10 +2,6 @@
 window.onload = init;
 
 function init() {
-    //document.getElementById("thetext").onclick = function () { toggleEditor("thetext", "ta1", "editor");}
-    //document.getElementById("thetextHome").onclick = function () { toggleEditor("thetextHome", "ta2", "editorHome");}
-    //document.getElementById("thetextVisitor").onclick = function () { toggleEditor("thetextVisitor", "ta3", "editorVisitor");}
-
 
     document.getElementById("submit").onclick = function () { doEdit("thetext", "ta1", "editor");}
     document.getElementById("submit2").onclick = function () { doEdit("thetextHome", "ta2", "editorHome");}
@@ -15,6 +11,13 @@ function init() {
     document.getElementById("addHome").onclick = function () { counter(1, "scoreHome"); }
     document.getElementById("subVisitor").onclick = function () { counter(-1, "scoreVisitor"); }
     document.getElementById("addVisitor").onclick = function () { counter(1, "scoreVisitor"); }
+
+    // Event added not to select when double clicking
+    document.getElementById("subVisitor").addEventListener('mousedown', function(e){e.preventDefault();}, false);
+    document.getElementById("addHome").addEventListener('mousedown', function(e){e.preventDefault();}, false);
+    document.getElementById("subVisitor").addEventListener('mousedown', function(e){e.preventDefault();}, false);
+    document.getElementById("addVisitor").addEventListener('mousedown', function(e){e.preventDefault();}, false);
+
 }
 
 

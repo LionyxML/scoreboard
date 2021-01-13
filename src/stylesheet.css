@@ -1,10 +1,9 @@
-* {
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
 
 body {
-	font-family: roboto, arial, sans-serif;
-    background-color: black;
+	  font-family: 'Open Sans';
+    background-color: #259;
     color: white;
     text-align: center;
     font-size: 1em;
@@ -18,20 +17,23 @@ h2 {
 h1 {
   text-align: center;
   font-size: 300%;
+
 }
 
-.column {
-  float: left;
-  width: 50%;
-  padding: 3px;
+.flex-container {
+  display: flex;
+  justify-content: center;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+.flex-container > div {
+  min-width: 150px;
+  background-color: #25F;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 0 4px 6px #000;
 
+}
 
 div#editor {
 	display: none;
@@ -46,14 +48,14 @@ div#editorVisitor {
 }
 
 .number {
-  font-size: 800%;
+  font-size: 400%;
+  font-family: 'Orbitron';
 }
 
-.n-resize{ 
+.n-resize{
   cursor: n-resize;
 }
 
 .s-resize{
   cursor: s-resize;
 }
-
