@@ -1,14 +1,15 @@
-# scoreboard
+# Scoreboard
 
 Scoreboard is what you need to keep track of game points!
 
-Done to be projected in large screens.
+Done to be projected in large screens and assist live events.
 
-You can change the title and team(players?) names by clicking on them.
+You can customize (by clicking on then), both title and player names.
 
-The + and - signs increase or decrease points. 
+Score is increased and decreased by the respective arrows.
 
-## scoreboard in Action
-![scoreboard](img/scoreboard.gif)
+## Live Demo
+![scoreboard](img/demo.gif)
 
-
+## Screenshot
+![scoreboard](img/demo.png)
